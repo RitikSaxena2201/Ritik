@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Cherry & Me 🌻</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#fff0f5,#ffe4ec,#fff5d9);
+overflow-x:hidden;
+color:#4b2e2e;
+}
+
+/* FLOATING HEARTS */
+
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+z-index:1;
+}
+
+.heart{
+position:absolute;
+bottom:-20px;
+color:#ff4d6d;
+animation:float 8s linear infinite;
+opacity:0.5;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0) scale(0.8);
+opacity:0;
+}
+20%{
+opacity:0.7;
+}
+100%{
+transform:translateY(-120vh) scale(1.5);
+opacity:0;
+}
+}
+
+/* SECTIONS */
+
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+position:relative;
+z-index:2;
+}
+
+.heroGlow{
+position:absolute;
+width:500px;
+height:500px;
+background:rgba(255,182,193,0.25);
+border-radius:50%;
+filter:blur(100px);
+top:-120px;
+right:-120px;
+z-index:0;
+}
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:70px;
+padding:100px 20px;
+position:relative;
+z-index:2;
+}
+
+.story{
+display:flex;
+justify-content:center;
+}
+
+.card{
+max-width:760px;
+width:100%;
+background:rgba(255,255,255,0.35);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.4);
+border-radius:40px;
+padding:55px 38px;
+text-align:center;
+box-shadow:0 12px 40px rgba(0,0,0,0.08);
+animation:fadeUp 1.2s ease;
+transition:0.4s ease;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.01);
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* FLOWER */
+
+.flower{
+font-size:95px;
+margin-bottom:22px;
+animation:flowerFloat 4s ease-in-out infinite;
+filter:drop-shadow(0 12px 18px rgba(0,0,0,0.15));
+}
+
+@keyframes flowerFloat{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-12px);
+}
+}
+
+/* TEXT */
+
+.small{
+margin-bottom:20px;
+font-size:14px;
+letter-spacing:5px;
+text-transform:uppercase;
+color:#b84b6b;
+font-weight:600;
+}
+
+h1{
+font-size:58px;
+margin-bottom:24px;
+color:#c85c7d;
+}
+
+h2{
+font-size:42px;
+margin-bottom:24px;
+color:#7b2d52;
+}
+
+p{
+font-size:22px;
+line-height:1.9;
+font-weight:300;
+}
+
+/* BUTTON */
+
+.songBtn{
+display:inline-block;
+margin-top:40px;
+padding:18px 34px;
+border-radius:50px;
+background:linear-gradient(135deg,#ff5d8f,#ff9f68);
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+box-shadow:0 12px 25px rgba(255,105,135,0.3);
+transition:0.3s;
+}
+
+.songBtn:hover{
+transform:scale(1.05);
+}
+
+/* SIGNATURE */
+
+.signature{
+margin-top:55px;
+font-size:25px;
+font-style:italic;
+line-height:1.8;
+opacity:0.9;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+h1{
+font-size:40px;
+}
+
+h2{
+font-size:32px;
+}
+
+p{
+font-size:18px;
+}
+
+.flower{
+font-size:75px;
+}
+
+.card{
+padding:40px 24px;
+border-radius:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<!-- HERO -->
+
+<section>
+
+<div class="heroGlow"></div>
+
+<div class="card">
+
+<div class="flower">🌻</div>
+
+<div class="small">
+Cherry & Me ✨
+</div>
+
+<h1>Hi Fiancée 🍒</h1>
+
+<p>
+This isn’t just a website.<br>
+It’s a tiny little piece of us.<br><br>
+
+Our first month.<br>
+Our first chapter 🌻
+</p>
+
+</div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<div class="timeline">
+
+<!-- STORY 1 -->
+
+<div class="story">
+<div class="card">
+
+<div class="flower">🌱</div>
+
+<h2>22 February 🌙</h2>
+
+<p>
+A normal day for the world.<br><br>
+
+But somehow,<br>
+the beginning of something unforgettable for me.<br><br>
+
+The day we quietly decided…<br>
+maybe this is where forever begins.
+</p>
+
+</div>
+</div>
+
+<!-- STORY 2 -->
+
+<div class="story">
+<div class="card">
+
+<div class="flower">🌿</div>
+
+<h2>The Conversations 🍒</h2>
+
+<p>
+Then our conversations started growing.<br><br>
+
+From random talks…<br>
+to waiting for your notifications…<br>
+to slowly becoming part of each other’s everyday.<br><br>
+
+Somewhere in between,<br>
+you became my calm place.
+</p>
+
+</div>
+</div>
+
+<!-- STORY 3 -->
+
+<div class="story">
+<div class="card">
+
+<div class="flower">🌻</div>
+
+<h2>The Little Things ✨</h2>
+
+<p>
+The late-night talks.<br>
+The small check-ins.<br>
+The way even ordinary days started feeling softer because you were in them.<br><br>
+
+We may not say the big words yet…<br>
+but hearts understand in their own language.
+</p>
+
+</div>
+</div>
+
+<!-- STORY 4 -->
+
+<div class="story">
+<div class="card">
+
+<div class="flower">🌻✨</div>
+
+<h2>15 April 💍</h2>
+
+<p>
+Rokafied.<br>
+Engaged.<br>
+Officially together.<br><br>
+
+But honestly…<br>
+my heart already knew long before that day.<br><br>
+
+Seeing you beside me still feels unreal<br>
+in the best way possible.
+</p>
+
+</div>
+</div>
+
+<!-- STORY 5 -->
+
+<div class="story">
+<div class="card">
+
+<div class="flower">🍒</div>
+
+<h2>I Cherry You 🍒</h2>
+
+<p>
+Maybe we still haven’t exchanged those three words.<br><br>
+
+But somewhere between every goodnight,<br>
+every smile,<br>
+and every little “I cherry you” 🍒<br><br>
+
+my heart quietly understood what this is.
+</p>
+
+</div>
+</div>
+
+<!-- FINAL -->
+
+<div class="story">
+<div class="card">
+
+<div class="flower">🌻🌻</div>
+
+<h2>One Month Down 🌻</h2>
+
+<p>
+And somehow,<br>
+it already feels like I’ve known your heart forever.<br><br>
+
+Thank you for making ordinary days feel warmer,<br>
+calmer,<br>
+brighter…<br>
+and something I look forward to.<br><br>
+
+Here’s to growing together,<br>
+through every season ahead 🌻
+</p>
+
+<a
+class="songBtn"
+href="https://www.youtube.com/results?search_query=do+anjaane+ajnabi+vivah"
+target="_blank"
+>
+🎵 Our Song Moment
+</a>
+
+<div class="signature">
+To my current fiancée,<br>
+and soon… my wife ❤️<br><br>
+
+— Kittu 🐧
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+function createHeart(){
+
+const heart = document.createElement('div');
+
+heart.classList.add('heart');
+
+heart.innerHTML = Math.random() > 0.5 ? '❤️' : '💖';
+
+heart.style.left = Math.random()*100 + 'vw';
+
+heart.style.fontSize = (Math.random()*20+16)+'px';
+
+heart.style.animationDuration = (Math.random()*3+5)+'s';
+
+document.getElementById('hearts').appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,400);
+
+</script>
+
+</body>
+</html>
